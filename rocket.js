@@ -21,12 +21,11 @@ class Rocket
 
     update(goal)
     {
-
         if(this.pos.dist(goal.pos) < 20)
         {
             this.pos = createVector(goal.pos.x, goal.pos.y);
             this.foundGoal = true;
-            this.score = 1;
+            this.score = 1 + (1 / this.step);
         }
         else if(!this.foundGoal)
         {

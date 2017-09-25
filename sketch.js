@@ -6,6 +6,7 @@ var goal;
 function setup()
 {
     createCanvas(screenSize, screenSize);
+    background(95);
     colorMode(HSB);
     noStroke();
 
@@ -17,7 +18,7 @@ function setup()
 
 function draw()
 {
-    background(255);
+    background(95);
 
     population.update();
     population.show(); 
