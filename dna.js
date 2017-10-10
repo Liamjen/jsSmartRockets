@@ -2,12 +2,13 @@ var mutateChance = 0.05;
 
 class DNA
 {
-
-    constructor(length, strength)
+    constructor(length, strength, p5obj)
     {
         this.dna = [];
         this.length = length;
         this.strength = strength;
+
+        this.p5obj = p5obj;
 
         for(var i = 0; i < length; i++)
         {
@@ -41,3 +42,5 @@ class DNA
         }
     }
 }
+
+module.exports = DNA;
